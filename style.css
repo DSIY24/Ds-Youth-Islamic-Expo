@@ -64,6 +64,87 @@ button {
 .title.active {
   opacity: 0;
 }
+@media (max-width: 1000px) {
+  .loactionWrapper {
+    width: 85vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e0e1dd;
+    gap: 0vw;
+    border-radius: 1rem;
+    text-align: center;
+  }
+  .buttonCSS {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .hamburgerMenu {
+    display: flex;
+    cursor: pointer;
+  }
+  .homepage {
+    height: 91vh;
+  }
+  .homePageSlider {
+    min-width: 100%;
+    min-height: 91vh;
+  }
+  .slides {
+    height: 91vh;
+  }
+  .slides img {
+    height: 91vh;
+  }
+  .navBar {
+    height: 4vh;
+    margin-top: 91vh;
+  }
+  .navBar ul {
+    display: none;
+    z-index: -1;
+    opacity: 0;
+    pointer-events: none;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    padding-left: 0%;
+    text-align: center;
+    top: 20%;
+    padding: 0rem 2rem;
+  }
+  .title h1 {
+    font-size: 3.5rem;
+    line-height: 7rem;
+  }
+  .title h2 {
+    font-size: 2rem;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    width: 80vw;
+  }
+}
+@media (max-width: 573px) {
+  .title h1 {
+    font-size: 3rem;
+
+    line-height: normal;
+  }
+  .title h2 {
+    font-size: 1.5rem;
+  }
+}
 .hamburgerMenu {
   display: none;
   flex-direction: column;
@@ -844,7 +925,7 @@ nav p {
 .themeText button {
   padding: 0.5rem 3rem;
   width: 200px;
-  font-size: 0.5rem;
+
   text-transform: capitalize;
   transition: all 0.5s;
   font-size: 1rem;
@@ -905,7 +986,7 @@ nav p {
   .themeWrapper {
     position: absolute;
     z-index: 500;
-    top: 220vh;
+    top: 280vh;
     width: 80vw;
     color: white;
     border-radius: 20px;
@@ -952,20 +1033,19 @@ nav p {
   z-index: 20;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-
+  gap: 1vw;
+  align-items: center;
   justify-content: center;
-  padding: 2rem 5rem;
 }
 .loactionWrapper {
-  width: 85vw;
+  width: 75vw;
   height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  padding: 0vw 2vw;
   background-color: #e0e1dd;
-  gap: 5rem;
+  gap: 2vw;
   border-radius: 1rem;
 }
 .loactionWrapper p {
@@ -997,7 +1077,9 @@ nav p {
 .locationIndex h1 {
   font-size: 4rem;
 }
-
+.microMap {
+  display: none;
+}
 .smallMap {
   display: none;
 }
@@ -1009,7 +1091,45 @@ nav p {
   padding: 3rem;
   color: white;
 }
+@media (max-width: 1330px) {
+  .smallMap {
+    display: inline-block;
+  }
+  .bigMap {
+    display: none;
+  }
+  .loactionWrapper {
+    width: 85vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+    background-color: #e0e1dd;
+    gap: 2vw;
+    border-radius: 1rem;
+  }
+  .locationIndex h1 {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 1000px) {
+  .loactionWrapper {
+    width: 85vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e0e1dd;
+    gap: 0vw;
+    border-radius: 1rem;
+    text-align: center;
+  }
+  .buttonCSS {
+    display: none;
+  }
+}
 @media (max-width: 1000px) {
   .hamburgerMenu {
     display: flex;
@@ -1038,22 +1158,7 @@ nav p {
     opacity: 0;
     pointer-events: none;
   }
-  .title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0%;
-    padding-left: 0%;
-    text-align: center;
-    padding: 0rem 2rem;
-  }
-  .title h1 {
-    font-size: 3.5rem;
-  }
-  .title h2 {
-    font-size: 2rem;
-  }
+
   .cardContainer {
     display: flex;
     flex-direction: column;
@@ -1061,21 +1166,8 @@ nav p {
   .card {
     width: 80vw;
   }
-  .locationIndex h1 {
-    font-size: 3rem;
-  }
-  .locationIndex {
-    padding: 0rem 1rem;
-  }
 }
-@media (max-width: 815px) {
-  .largeMap {
-    display: none;
-  }
-  .smallMap {
-    display: inline-block;
-  }
-}
+
 @media (max-width: 470px) {
   nav ul li {
     list-style: none;
@@ -1083,13 +1175,26 @@ nav p {
     font-size: 1.5rem;
   }
   .title h1 {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
+    max-width: 300px;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
   }
   .title h2 {
     font-size: 1.5rem;
+    max-width: 375px;
   }
   .competitionCards h1 {
     font-size: 3rem;
+  }
+}
+@media (max-width: 605px) {
+  .microMap {
+    display: inline-block;
+  }
+  .smallMap {
+    display: none;
   }
 }
 
@@ -1300,7 +1405,15 @@ nav p {
   background-size: cover;
   background-position: center;
 }
-
+@media (max-width: 700px) {
+  .restRulesAndRegulation {
+    padding: 1rem;
+  }
+  .restRulesAndRegulation li {
+    padding: 0.25rem 1rem;
+    font-size: 1.1rem;
+  }
+}
 .contactPageIMG {
   position: fixed;
   top: 0;
@@ -1331,6 +1444,30 @@ nav p {
   width: 500px;
   margin-left: 20px;
 }
+@media (max-width: 529px) {
+  .restCompetitions img {
+    margin-top: 1rem;
+    width: 350px;
+    margin-left: 0px;
+  }
+}
 .restCompetitions h2 {
   font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.restRulesAndRegulation button {
+  outline: none;
+  padding: 1rem 3rem;
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+  transition: all 0.5s;
+  font-size: 1rem;
+  background-color: #0d1b2a;
+  color: white;
+  border: none;
+}
+.restRulesAndRegulation button:hover {
+  border: 1px black solid;
+  background-color: transparent;
+  color: black;
 }

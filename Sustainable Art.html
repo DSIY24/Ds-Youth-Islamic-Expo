@@ -22,12 +22,29 @@
     <nav class="menu">
       <ul>
         <li><a href="index.html">HOME</a></li>
-        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="#">COMPETITION</a></li>
+        <div class="navSubList">
+          <li><a href="Quran Recitation.html">QIRAT COMPETEITION</a></li>
+          <li>
+            <a href="Sustainable Art.html" class="selectedNav"
+              >SUSTAINABLE ART</a
+            >
+          </li>
+          <li><a href="Elocution.html">ELOCUTION</a></li>
+        </div>
         <li>
           <a href="Rules And Regulations.html">RULES AND REGULATIONS</a>
         </li>
-        <li><a href="Contact.html" class="selectedNav">CONTACT</a></li>
+        <li class="menuRegistration"><a href="#">REGISTRATION</a></li>
+        <div class="navSubList">
+          <li><a href="#">Interal</a></li>
+          <li><a href="externalRegistration.html">External</a></li>
+        </div>
       </ul>
+      <p>
+        *For any queries, kind+++ly contact us:<br />
+        qurancompetition@dubaischolars.com
+      </p>
     </nav>
 
     <div class="contactPageIMG"></div>
@@ -51,13 +68,27 @@
       </div>
     </div>
 
+    <div class="model" id="model">
+      <div class="modelHeader">
+        <div class="modelTitle">Contact</div>
+        <button data-close-button class="closeModel">x</button>
+      </div>
+      <div class="modelBody">
+        If you have any enquires please eamil us at <br />
+        qurancompetition@dubaischolars.com
+      </div>
+    </div>
+    <div id="overlay"></div>
+
     <div class="navBar aboutPage">
       <ul>
         <a href="index.html"><li>Home</li></a>
-        <a href="#"><li class="competitionHover">Competition</li></a>
-        <a href="Rules And Regulations.html"><li>Rules and Regulation</li></a>
+        <a href="#"><li class="competitionHover">Competitions</li></a>
+        <a href="Rules And Regulations.html" class="selectedNav"
+          ><li>Rules and Regulation</li></a
+        >
         <a href="#" class="registerHover"><li>Registration</li></a>
-        <a href="Contact.html" class="selectedNav"><li>Contact</li></a>
+        <button data-model-target="#model">Contact</button>
       </ul>
     </div>
     <div class="restCompetitions">
@@ -105,7 +136,7 @@
             student name and school name clearly.
           </li>
         </ul>
-        <img src="images/Quran Competition .png" alt="" />
+        <img src="images/Sustainable Art Competition.png" alt="" />
       </div>
     </div>
     <script src="script.js"></script>
