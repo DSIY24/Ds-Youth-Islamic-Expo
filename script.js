@@ -79,16 +79,6 @@ function slideUp() {
   }
 }
 
-const registration = document.querySelector(".registerHover");
-const registrationPopUp = document.querySelector(".registationContainer");
-
-registration.addEventListener("mouseover", function () {
-  registrationPopUp.classList.add("active");
-});
-registration.addEventListener("mouseout", function () {
-  registrationPopUp.classList.remove("active");
-});
-
 const competition = document.querySelector(".competitionHover");
 const competitionPopUp = document.querySelector(".competitionContainer");
 
