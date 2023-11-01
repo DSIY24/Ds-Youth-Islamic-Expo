@@ -755,19 +755,22 @@ nav p {
   justify-content: center;
   align-items: center;
 }
-.cardContainer .card:first-child {
+.cardContainer a {
+  text-decoration: none;
+}
+.cardContainer .quranCard {
   background: url(https://images.unsplash.com/photo-1609599006353-e629aaabfeae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cXVyYW58ZW58MHx8MHx8fDA%3D&w=1000&q=80);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.cardContainer .card:nth-child(2) {
+.cardContainer .sustainableCard {
   background: url(https://imagevars.gulfnews.com/2018/5/24/1_16a084a1bda.2226177_3611950995_16a084a1bda_large.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom;
 }
-.cardContainer .card:nth-child(3) {
+.cardContainer .elocutionCard {
   background: url(https://img.freepik.com/free-photo/black-microphone-conference-room_1232-3128.jpg?w=996&t=st=1695886639~exp=1695887239~hmac=6d6a585156d563708e68879f29e16c6a9d6a871621cf65bbbcaa3154286e2e8b);
   background-size: cover;
   background-repeat: no-repeat;
@@ -784,6 +787,7 @@ nav p {
   transition: 1s all;
   color: white;
   padding: 1rem;
+  cursor: pointer;
 }
 .card:hover {
   height: 58vh;
