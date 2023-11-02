@@ -64,23 +64,7 @@ button {
 .title.active {
   opacity: 0;
 }
-@media (max-width: 1000px) {
-  .loactionWrapper {
-    width: 85vw;
-    height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #e0e1dd;
-    gap: 0vw;
-    border-radius: 1rem;
-    text-align: center;
-  }
-  .buttonCSS {
-    display: none;
-  }
-}
+
 @media (max-width: 1000px) {
   .hamburgerMenu {
     display: flex;
@@ -818,6 +802,10 @@ nav p {
   color: white;
   font-size: 4rem;
 }
+.textbox p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+}
 @media (max-width: 1000px) {
   .card .textBox p {
     display: none;
@@ -914,6 +902,8 @@ nav p {
 }
 .themeText p {
   margin-bottom: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  max-width: 470px;
 }
 .themeImage p {
   max-width: 500px;
@@ -942,13 +932,34 @@ nav p {
 .smallThemeImage {
   display: none;
 }
-@media (max-width: 1224px) {
+@media (max-width: 1219px) {
+  .themeWrapper {
+    padding: 1rem 1.5rem;
+    max-width: 950px;
+  }
+  .themeImage {
+    grid-column: 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-self: end;
+  }
+  .themeImage img {
+    height: 155px;
+    margin-bottom: 5rem;
+  }
+}
+
+@media (max-width: 1000px) {
   .themeWrapper {
     max-width: 800px;
     padding: 1rem 1.5rem;
   }
   .themeText h1 {
     font-size: 1.5rem;
+    margin-bottom: 0.5rem;
   }
   .themeText p {
     margin-bottom: 15px;
@@ -1035,24 +1046,51 @@ nav p {
   z-index: 20;
   display: flex;
   flex-direction: column;
-  gap: 1vw;
+
   align-items: center;
   justify-content: center;
 }
 .loactionWrapper {
-  width: 75vw;
-  height: 80vh;
+  width: 1150px;
+  height: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0vw 2vw;
+  padding: 0px 0px;
   background-color: #e0e1dd;
-  gap: 2vw;
+  gap: 40px;
   border-radius: 1rem;
 }
 .loactionWrapper p {
   text-align: left;
   max-width: 500px;
+  font-family: "Quicksand", sans-serif;
+}
+.loactionWrapper div {
+  overflow: hidden;
+  transition: all 0.75s ease-in-out;
+  border: 1px solid transparent;
+}
+.loactionWrapper div:first-child {
+  width: 575px;
+  height: 475px;
+  background: url(images/google\ maps\ image\ .png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.loactionWrapper div:first-child:hover {
+  border: 1px solid black;
+}
+.loactionWrapper img {
+  cursor: pointer;
+  transition: all 0.75s ease-out;
+  overflow: hidden;
+}
+.loactionWrapper img:hover {
+  transform: scale(1.2);
+
+  overflow: hidden;
 }
 .buttonCSS {
   padding: 1rem 1.5rem;
@@ -1079,12 +1117,7 @@ nav p {
 .locationIndex h1 {
   font-size: 4rem;
 }
-.microMap {
-  display: none;
-}
-.smallMap {
-  display: none;
-}
+
 .homePageFooter {
   position: relative;
   height: auto;
@@ -1093,32 +1126,56 @@ nav p {
   padding: 3rem;
   color: white;
 }
-@media (max-width: 1330px) {
-  .smallMap {
-    display: inline-block;
-  }
-  .bigMap {
-    display: none;
-  }
+@media (max-width: 1219px) {
   .loactionWrapper {
-    width: 85vw;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #e0e1dd;
-    gap: 2vw;
-    border-radius: 1rem;
+    width: 950px;
+    height: 450px;
+    gap: 20px;
   }
-  .locationIndex h1 {
+  .loactionWrapper div:first-child {
+    width: 500px;
+    height: 400px;
+  }
+  .loactionWrapper h1 {
+    font-size: 3rem;
+  }
+  .loactionWrapper p {
+    max-width: 400px;
+  }
+  .buttonCSS {
+    padding: 0.75rem 1rem;
+    text-transform: capitalize;
+    transition: all 0.5s;
+    font-size: 1.2rem;
+    background-color: #0d1b2a;
+    color: white;
+    border: 1px solid white;
+    margin-top: 1rem;
+    margin-bottom: 5vh;
+  }
+}
+@media (max-width: 970px) {
+  .loactionWrapper {
+    width: 750px;
+    height: 350px;
+    gap: 20px;
+  }
+  .loactionWrapper div:first-child {
+    width: 350px;
+    height: 300px;
+  }
+  .loactionWrapper p {
+    max-width: 350px;
+  }
+  .loactionWrapper h1 {
     font-size: 3rem;
   }
 }
-@media (max-width: 1000px) {
+
+@media (max-width: 765px) {
   .loactionWrapper {
     width: 85vw;
-    height: 80vh;
+    height: 600px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1128,10 +1185,22 @@ nav p {
     border-radius: 1rem;
     text-align: center;
   }
+  .loactionWrapper div:first-child {
+    width: 75vw;
+    height: 350px;
+  }
+  .loactionWrapper p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .loactionWrapper h1 {
+    font-size: 2.5rem;
+  }
   .buttonCSS {
-    display: none;
+    margin-bottom: 0rem;
   }
 }
+
 @media (max-width: 1000px) {
   .hamburgerMenu {
     display: flex;
@@ -1193,14 +1262,6 @@ nav p {
   }
   .competitionCards h1 {
     font-size: 3rem;
-  }
-}
-@media (max-width: 605px) {
-  .microMap {
-    display: inline-block;
-  }
-  .smallMap {
-    display: none;
   }
 }
 
