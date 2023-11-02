@@ -578,8 +578,8 @@ nav p {
 /* */
 
 .aboutUsWrapper {
-  width: 85vw;
-  height: 95vh;
+  width: 1150px;
+  height: 500px;
   margin-top: 13vh;
   display: flex;
   align-items: center;
@@ -604,7 +604,7 @@ nav p {
 .aboutUsText h1 {
   margin-bottom: 0.5rem;
   max-width: 500px;
-  font-size: 10px;
+  font-size: 1px;
   display: none;
 }
 .aboutUsText button {
@@ -614,7 +614,7 @@ nav p {
   width: 250px;
 }
 .aboutUsText h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   max-width: 400px;
   line-height: 4rem;
   margin-bottom: 0.5rem;
@@ -622,12 +622,52 @@ nav p {
 }
 
 .aboutUsImages {
-  width: 50%;
+  width: 550px;
   background: url(images/Islamic\ Expo\ Image.jpeg);
   background-position: center;
   background-size: cover;
-  height: 75vh;
+  height: 450px;
 }
+@media (max-width: 1219px) {
+  .aboutUsWrapper {
+    width: 950px;
+    height: 450px;
+    gap: 10px;
+  }
+  .aboutUsImages {
+    width: 500px;
+    height: 400px;
+  }
+}
+@media (max-width: 970px) {
+  .aboutUsWrapper {
+    width: 750px;
+    height: 350px;
+    gap: 10px;
+  }
+  .aboutUsImages {
+    width: 350px;
+    height: 300px;
+  }
+  .aboutUsText h2 {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 765px) {
+  .aboutUsWrapper {
+    width: 85vw;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #e0e1dd;
+    gap: 0vw;
+    border-radius: 1rem;
+    text-align: center;
+  }
+}
+/*
 @media (max-width: 1395px) {
   .aboutUsText button {
     display: none;
@@ -675,7 +715,7 @@ nav p {
     background-color: #f6f6f6;
   }
 }
-
+*/
 @media (max-width: 1500px) {
   .restIndex .reveal {
     display: none;
