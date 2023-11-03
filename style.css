@@ -928,7 +928,7 @@ nav p {
   }
 }
 .themeImage img {
-  height: 200px;
+  height: 265px;
   margin-bottom: 15px;
   border-radius: 15px;
 }
@@ -993,8 +993,8 @@ nav p {
     justify-self: end;
   }
   .themeImage img {
-    height: 155px;
-    margin-bottom: 5rem;
+    height: 225px;
+    margin-bottom: 3rem;
   }
 }
 
@@ -1019,7 +1019,7 @@ nav p {
     max-width: 400px;
   }
   .themeImage img {
-    max-height: 125px;
+    max-height: 180px;
     margin-bottom: 5px;
   }
   .themeImage {
@@ -1057,6 +1057,7 @@ nav p {
     padding: 0rem;
     text-align: center;
     padding-top: 2rem;
+    padding: 0.5rem;
   }
   .smallThemeImage {
     display: inline-block;
@@ -1065,6 +1066,14 @@ nav p {
   }
   .themeImage p {
     display: none;
+  }
+  .themeText h1 {
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+  }
+  .themeText p {
+    font-size: 1rem;
+    max-width: 500px;
   }
   .themeImage img {
     display: none;
