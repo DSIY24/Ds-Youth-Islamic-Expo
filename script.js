@@ -7,6 +7,19 @@ setInterval(function () {
   }
 }, 5000);
 
+const titleHome = document.querySelector(".title");
+let LastscrollY = window.scrollY;
+
+window.addEventListener("scroll", () => {
+  if (LastscrollY > 100) {
+    titleHome.classList.add("active");
+  }
+  if (LastscrollY < 100) {
+    titleHome.classList.remove("active");
+  }
+  LastscrollY = window.scrollY;
+});
+
 const openModelButtons = document.querySelectorAll("[data-model-target]");
 const closeModelButtons = document.querySelectorAll("[data-close-button]");
 const overlay = document.getElementById("overlay");

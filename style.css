@@ -39,8 +39,11 @@ button {
   align-items: flex-start;
   color: white;
   z-index: 1;
+  transition: all 1s;
 }
-
+.title.active {
+  opacity: 0;
+}
 .title h1 {
   font-size: 7rem;
   line-height: 7rem;
