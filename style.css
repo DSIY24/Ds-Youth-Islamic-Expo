@@ -50,6 +50,7 @@ button {
 .topTitle {
   max-width: 800px;
   text-align: center;
+  margin-bottom: 1rem;
 }
 .TopTitle span {
   background-color: black;
@@ -60,6 +61,11 @@ button {
   text-align: center;
   font-size: 1.7rem;
   display: inline;
+}
+
+.title h2 span {
+  font-weight: 500;
+  letter-spacing: 5px;
 }
 .title.active {
   opacity: 0;
@@ -1108,7 +1114,7 @@ nav p {
 }
 .loactionWrapper div {
   overflow: hidden;
-  transition: all 0.75s ease-in-out;
+  transition: all 0.2s ease-in-out;
   border: 1px solid transparent;
 }
 .loactionWrapper div:first-child {
@@ -1121,6 +1127,7 @@ nav p {
 }
 .loactionWrapper div:first-child:hover {
   border: 1px solid black;
+  transform: scale(1.01);
 }
 .loactionWrapper img {
   cursor: pointer;
@@ -1165,6 +1172,9 @@ nav p {
   z-index: 1000;
   padding: 3rem;
   color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 @media (max-width: 1219px) {
   .loactionWrapper {
