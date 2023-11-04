@@ -1231,7 +1231,7 @@ nav p {
   position: relative;
   height: auto;
   background-color: #0d1b2a;
-  z-index: 1000;
+  z-index: 99;
   padding: 3rem;
   color: white;
   display: flex;
@@ -1632,8 +1632,18 @@ nav p {
   width: 500px;
   margin-left: 20px;
 }
+.restRulesAndRegulation img {
+  margin-top: 1rem;
+  width: 500px;
+  margin-left: 20px;
+}
 @media (max-width: 529px) {
   .restCompetitions img {
+    margin-top: 1rem;
+    width: 350px;
+    margin-left: 0px;
+  }
+  .restRulesAndRegulation img {
     margin-top: 1rem;
     width: 350px;
     margin-left: 0px;
