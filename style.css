@@ -1238,9 +1238,13 @@ nav p {
   justify-content: space-between;
   align-items: center;
 }
+
 @media (max-width: 830px) {
   .homePageFooter img {
     display: none;
+  }
+  .homePageFooter h3 {
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 1219px) {
