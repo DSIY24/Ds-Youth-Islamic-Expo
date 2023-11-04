@@ -580,15 +580,26 @@ nav p {
   justify-content: center;
   position: relative;
   z-index: 10;
-  min-height: 140vh;
+  height: 140vh;
   background-color: #f6f6f6;
 }
-
+@media (max-width: 1219px) {
+  .restIndex {
+    height: 120vh;
+    background-color: #f6f6f6;
+  }
+}
+@media (max-width: 765px) {
+  .restIndex {
+    height: 150vh;
+    background-color: #f6f6f6;
+  }
+}
 /* */
 
 .aboutUsWrapper {
   width: 1150px;
-  height: 500px;
+  height: 600px;
   margin-top: 13vh;
   display: flex;
   align-items: center;
@@ -626,10 +637,12 @@ nav p {
   font-size: 3rem;
   max-width: 400px;
   line-height: 4rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
   overflow: hidden;
 }
-
+.aboutUsText p {
+  font-family: "Quicksand", sans-serif;
+}
 .aboutUsImages {
   width: 550px;
   background: url(images/Islamic\ Expo\ Image.jpeg);
@@ -640,23 +653,27 @@ nav p {
 @media (max-width: 1219px) {
   .aboutUsWrapper {
     width: 950px;
-    height: 450px;
+    height: 500px;
     gap: 10px;
   }
+  .aboutUsText h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
   .aboutUsImages {
-    width: 500px;
+    width: 450px;
     height: 400px;
   }
 }
 @media (max-width: 970px) {
   .aboutUsWrapper {
     width: 750px;
-    height: 350px;
+    height: 500px;
     gap: 10px;
   }
   .aboutUsImages {
     width: 350px;
-    height: 300px;
+    height: 400px;
   }
   .aboutUsText h2 {
     font-size: 2rem;
@@ -665,7 +682,7 @@ nav p {
 @media (max-width: 765px) {
   .aboutUsWrapper {
     width: 85vw;
-    height: 600px;
+    height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -674,6 +691,15 @@ nav p {
     gap: 0vw;
     border-radius: 1rem;
     text-align: center;
+  }
+  .aboutUsText {
+    width: 90%;
+    color: black;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 /*
@@ -999,6 +1025,27 @@ nav p {
     height: 225px;
     margin-bottom: 3rem;
   }
+  .themeWrapper {
+    position: absolute;
+    z-index: 500;
+    top: 230vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    color: white;
+    background-color: #1d2d44;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-content: center;
+    padding: 2rem 4rem;
+    box-shadow: 10px 10px 5px black;
+    transition: 1s all;
+  }
+  .themeWrapper.active {
+    top: 200vh;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1048,7 +1095,7 @@ nav p {
   .themeWrapper {
     position: absolute;
     z-index: 500;
-    top: 280vh;
+    top: 235vh;
     width: 80vw;
     color: white;
     border-radius: 20px;
@@ -1061,6 +1108,9 @@ nav p {
     text-align: center;
     padding-top: 2rem;
     padding: 0.5rem;
+  }
+  .themeWrapper.active {
+    top: 235vh;
   }
   .smallThemeImage {
     display: inline-block;
@@ -1187,6 +1237,11 @@ nav p {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 830px) {
+  .homePageFooter img {
+    display: none;
+  }
 }
 @media (max-width: 1219px) {
   .loactionWrapper {
