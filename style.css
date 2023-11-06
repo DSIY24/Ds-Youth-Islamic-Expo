@@ -453,7 +453,6 @@ nav p {
 */
 /* Nav Bar */
 .navBar {
-  position: sticky;
   height: 10vh;
   margin-top: 80vh;
   background-color: #0d1b2a;
@@ -462,6 +461,10 @@ nav p {
   align-items: center;
   padding: 0rem 3rem;
   z-index: 10;
+}
+div.navBar {
+  position: sticky;
+  top: 0;
 }
 .navBar a {
   color: #abcaed;
@@ -1638,6 +1641,10 @@ nav p {
   margin-top: 1rem;
   width: 500px;
   margin-left: 20px;
+  margin-bottom: 3rem;
+}
+.restRulesAndRegulation h3 {
+  margin-bottom: 1rem;
 }
 @media (max-width: 529px) {
   .restCompetitions img {
@@ -1665,6 +1672,9 @@ nav p {
   background-color: #0d1b2a;
   color: white;
   border: none;
+}
+.internalText {
+  margin-top: 3rem;
 }
 .restRulesAndRegulation button:hover {
   border: 1px black solid;
