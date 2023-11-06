@@ -18,18 +18,19 @@ button {
   font-family: "Poppins", sans-serif;
 }
 .homepage {
-  height: 90vh;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0d1b2a;
+  background-size: cover;
+  background-position: center;
   position: fixed;
-  top: 0;
+  top: -20%;
   z-index: -1;
 }
 .title {
   position: fixed;
-  background-color: transparent;
+
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
