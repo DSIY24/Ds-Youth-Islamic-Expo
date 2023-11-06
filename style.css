@@ -12,25 +12,24 @@ body {
 button {
   background-color: transparent;
   outline: none;
-
+  background-color: #0082e6;
   cursor: pointer;
   text-transform: capitalize;
   font-family: "Poppins", sans-serif;
 }
 .homepage {
-  height: auto;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-position: center;
   position: fixed;
-  top: -20%;
+
   z-index: -1;
 }
 .title {
   position: fixed;
-
   top: 15%;
   left: 50%;
   transform: translateX(-50%);
@@ -292,7 +291,7 @@ nav p {
 .competitionContainer {
   display: none;
   position: absolute;
-  top: 95vh;
+  top: 85vh;
   width: 300px;
   height: 200px;
   display: flex;
@@ -358,6 +357,7 @@ nav p {
   text-decoration: none;
   color: #abcaed;
 }
+/*
 .homePageSlider {
   min-width: 100%;
   min-height: 100vh;
@@ -450,11 +450,12 @@ nav p {
   cursor: pointer;
   transition: 0.5s;
 }
+*/
 /* Nav Bar */
 .navBar {
-  position: relative;
+  position: sticky;
   height: 10vh;
-  margin-top: 90vh;
+  margin-top: 80vh;
   background-color: #0d1b2a;
   display: flex;
   justify-content: flex-end;
