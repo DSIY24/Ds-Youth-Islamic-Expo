@@ -7,6 +7,7 @@
 body {
   background-color: #0d1b2a;
   font-family: "Poppins", sans-serif;
+  position: relative;
 }
 /* Homepage image Slider */
 button {
@@ -18,15 +19,19 @@ button {
   font-family: "Poppins", sans-serif;
 }
 .homepage {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-size: cover;
   background-position: center;
   position: fixed;
-
   z-index: -1;
+  top: 0%;
+}
+.homepage video {
+  object-fit: fill;
+  object-position: bottom;
 }
 .title {
   position: fixed;
@@ -126,6 +131,9 @@ button {
   }
   .card {
     width: 80vw;
+  }
+  .competitionSelector {
+    display: none;
   }
 }
 @media (max-width: 573px) {
@@ -452,6 +460,20 @@ nav p {
 }
 */
 /* Nav Bar */
+.videoCropper {
+  background-color: #0d1b2a;
+  position: fixed;
+  top: 80vh;
+  height: 50vh;
+  width: 100%;
+  z-index: 1;
+}
+@media (max-width: 1000px) {
+  .competitionSelector {
+    display: none;
+  }
+}
+
 .navBar {
   height: 10vh;
   margin-top: 80vh;
@@ -461,6 +483,7 @@ nav p {
   align-items: center;
   padding: 0rem 3rem;
   z-index: 10;
+  overflow-y: hidden;
 }
 div.navBar {
   position: sticky;
@@ -1328,6 +1351,9 @@ div.navBar {
 }
 
 @media (max-width: 1000px) {
+  .videoCropper {
+    display: none;
+  }
   .hamburgerMenu {
     display: flex;
     cursor: pointer;
@@ -1661,6 +1687,9 @@ div.navBar {
 .restCompetitions h2 {
   font-size: 2.5rem;
   margin-bottom: 2.5rem;
+}
+.artRules {
+  margin-top: 2rem;
 }
 .restRulesAndRegulation button {
   outline: none;
