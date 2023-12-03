@@ -1711,3 +1711,6 @@ div.navBar {
   background-color: transparent;
   color: black;
 }
+.restRulesAndRegulation h2 span {
+  font-size: 1rem;
+}
