@@ -306,7 +306,7 @@ nav p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  right: 585px;
+  right: 734px;
   background: transparent;
   z-index: 0;
 }
@@ -1705,7 +1705,9 @@ div.navBar {
 .internalText {
   margin-top: 3rem;
 }
-
+.restRulesAndRegulation iframe {
+  height: 80vh;
+}
 .restRulesAndRegulation button:hover {
   border: 1px black solid;
   background-color: transparent;
